@@ -1,0 +1,21 @@
+.board {
+    grid-template-columns: repeat(8, 1fr);
+    display: grid;
+    z-index: 1;
+    /* max-width: inherit; */
+}
+
+.square {
+    position: relative;
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+    z-index: 2;
+}
+
+.piece {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+}
