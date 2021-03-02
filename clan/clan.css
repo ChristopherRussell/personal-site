@@ -1,0 +1,25 @@
+.clan-game {
+    display: grid;
+    grid-template-columns: 500px 200px;
+    grid-template-rows: 500px;
+    grid-template-areas: "canvas side-menu";
+}
+
+.clan-game > canvas {
+    grid-area: canvas;
+}
+
+.clan-game > .side-menu {
+    grid-area: side-menu;
+    display: grid;
+    grid-template-columns: 200px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    border: 2px solid black;
+    background-color: gold;
+}
+
+.side-menu > p {
+    margin: auto;
+    font-size: 24px;
+    text-align: center;
+}

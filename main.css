@@ -1,0 +1,79 @@
+/* Layout for all pages */
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  background-color: #b7b4ae;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 200px auto;
+  grid-template-rows: 40px auto;
+  grid-template-areas:
+    "top-bar top-bar"
+    "side-bar content";
+  justify-content: stretch;
+  align-content: stretch;
+}
+
+.content {
+  margin-left: 10px;
+  grid-area: content;
+}
+
+.top-bar {
+  grid-area: top-bar;
+  /* align-self: center; /1* vertically center *1/ */
+  background-color: #44413c;
+}
+
+.top-bar a {
+  height: 100%;
+  font-size: 20px;
+  display: inline-block;
+  color: gold;
+  padding: 10px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.top-bar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Links on mouse-over */
+.top-bar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+.side-bar {
+  grid-area: side-bar;
+  background-color: #514e48;
+}
+
+.side-bar a {
+  font-size: 20px;
+  display: block;
+  color: khaki;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.side-bar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Links on mouse-over */
+.side-bar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}

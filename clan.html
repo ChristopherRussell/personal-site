@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="main.css"/>
+    <link rel="stylesheet" href="clan/clan.css"/>
+    <script src="jquery-3.5.1.min.js"></script>
+    <title>Clan Game</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="top-bar"></div>
+    <div class="side-bar"></div>
+    <div class="content">
+      <div class="clan-game">
+        <canvas id="canvas" width="500" height="500"></canvas>
+        <div class="side-menu">
+          <p id="side-menu-1"></p>
+          <p id="side-menu-2"></p>
+          <p id="side-menu-3"></p>
+          <p id="side-menu-4"></p>
+          <p id="side-menu-5"></p>
+        </div>
+      </div>
+      <br>
+      Use arrow keys to move your 'clan' around, input will be processed every 3 seconds. Circles represent clan armies and clashing will reduce destroy the smaller one and reduce the mass of the larger. Squares represent towns and they can be raided periodically for gold. This was made with basic javascript, before I realised using a game engine might be a better idea, or at least a renderer!
+    </div>
+  </div>
+  <script src="top-bar.js"></script>
+  <script src="side-bar-webdev.js"></script>
+  <script src="clan/clan_obj.js"></script>  
+  <script src="clan/clan.js"></script>
+</body>
+</html>
